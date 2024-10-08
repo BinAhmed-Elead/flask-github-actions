@@ -11,8 +11,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: KengoTODA/actions-setup-docker-compose@v1
-        with:
-          version: '2.14.2' # the full version of `docker-compose` command
       - name: run docker compose
         run: docker-compose run test
